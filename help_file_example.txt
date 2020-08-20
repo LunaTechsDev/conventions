@@ -1,0 +1,38 @@
+If you like our work please support us at https://patreon.com/LunaTechs
+
+This plugin works for MV and MZ!
+
+=== Summary ===
+This plugin allows you create different storage systems where the player can
+store his items. 
+
+This plugin does not add the ability to limit the player's inventory.
+
+=== Notetags ===
+Item, Weapon, Armor Notetags:
+
+<Cannot Store>
+This makes it so that the item cannot be store in the storage system.
+
+=== Plugin Commands ===
+Main Command: StorageSystem
+
+-----------------------
+StorageSystem open id
+-----------------------
+open - Keyword for opening a storage system. 
+
+Keep in mind that the id starts at 0!
+
+id - The id of the storage system that will be opened. If no id is
+     specified, the last opened storage system will be opened.
+
+=== License ===
+This plugin is released under MIT license.
+https://mit-license.org/
+
+=== Contact us ===
+[Website] : https://lunatechs.dev
+[Twitter] : https://twitter.com/LunaTechsDev
+[Github]  : https://github.com/LunaTechsDev
+[Patreon] : https://patreon.com/LunaTechsDev
