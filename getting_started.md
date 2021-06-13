@@ -9,21 +9,27 @@ This is to help you get started with creating a brand new plugin project with Lu
 
 ## Project Setup
 
-- Run `npm init` to create a package.json
+1. Run `npm init` to create a package.json
 
-- Install necessary node packages
+2. Install necessary node packages
 
-`npm install --save lix @lunatechs/lunatea-napkin`
+```
+npm install --save lix @lunatechs/lunatea-napkin
+```
 
-- Create a local scope with lix (unless you want to continue installing libraries globally)
+3. Create a local scope with lix (unless you want to continue installing libraries globally)
 
-`lix scope create`
+```
+lix scope create
+```
 
-- Install necessary Haxe libraries using lix
+4. Install necessary Haxe libraries using lix
 
-`lix install gh:LunaTechsDev/LunaTea`
+```
+lix install gh:LunaTechsDev/LunaTea
+```
 
-- Create a `compile.hxml` arguments list file for the haxe compiler in root of directory
+5. Create a `compile.hxml` arguments list file for the haxe compiler in root of directory
 
 ```
 # Include library
@@ -50,7 +56,7 @@ This is to help you get started with creating a brand new plugin project with Lu
 -js dist/plugin_name.js
 ```
 
-- Open your `package.json` and add a build script, for example
+6. Open your `package.json` and add a build script, for example
 
 ```json
 {
@@ -69,7 +75,7 @@ This is to help you get started with creating a brand new plugin project with Lu
 ```
 Where `napkin ./dist/` is pointing to the directory your plugin is compiled to
 
-- Create your `src` directory and add your `Main.hx` file and start developing
+7. Create your `src` directory and add your `Main.hx` file and start developing
 
 # Extras
 
