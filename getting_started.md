@@ -4,8 +4,9 @@ This is to help you get started with creating a brand new plugin project with Lu
 
 ## Prerequisites
 
-- Install (NodeJS)[https://nodejs.org/en/]
-- Install (Haxe)[https://haxe.org/]
+- Install [NodeJS](ttps://nodejs.org/en/)
+- Install [Haxe](https://haxe.org/)
+- Install [Haxe Extension Pack for VSCode](https://marketplace.visualstudio.com/items?itemName=vshaxe.haxe-extension-pack)
 
 ## Project Setup
 
