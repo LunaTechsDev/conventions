@@ -3,8 +3,14 @@ Conventions for plugins, help files, readme, blog posts, ...
 
 ## Repo Name
 
+- **For RPG Maker:**
 Luna-foo-bar
 
+- **For Paper Maker:**
+Origami-foo-bar
+
+**Plugin information note:**
+> Note: A key difference with RPG Maker and Paper maker is that Paper Maker contains all plugin command information within its plugin manager. The Paper Maker plugin manager also contains the url, author and other fields all within it, meaning we don't need to edit the fields in a file like in RPG Maker.
 
 ## Plugin URL
 
@@ -14,7 +20,6 @@ Luna-foo-bar
 ## Plugin Author
 
 ```@author LunaTechs - Pivoo```
-
 
 ## Class Name
 
