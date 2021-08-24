@@ -1,6 +1,15 @@
 # Getting Started
 
-This is to help you get started with creating a brand new plugin project with LunaTea and Haxe
+This is to help you get started with creating a brand new plugin project with LunaTea and Haxe manually without using an example project or any tools to get quickly started.
+
+### Example Projects
+If you would rather use an example project to get started then use one of the following depending on the engine you're using.
+
+- RPG Maker
+Use [LunarBase](https://github.com/LunaTechsDev/LunarBase) to quickly get started with this RPG Maker example project
+
+- Paper Maker
+Use [Origami Devtools](https://github.com/LunaTechsDev/origami-devtools) to quickly get started with this Paper Maker example project
 
 ## Prerequisites
 
