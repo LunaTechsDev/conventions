@@ -21,7 +21,7 @@ Origami-foo-bar
 
 ## Plugin Author
 
-```@author LunaTechs - Pivoo```
+```@author Pivoo | LunaTechs```
 
 ## Class Name
 
