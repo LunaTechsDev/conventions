@@ -23,11 +23,18 @@ Use [Origami Devtools](https://github.com/LunaTechsDev/origami-devtools) to quic
 
 2. Install necessary node packages
 
+- **For RPG Maker:**
 ```
 npm install --save lix @lunatechs/lunatea-napkin
 ```
 
-3. Create a local scope with lix (unless you want to continue installing libraries globally)
+- **For Paper Maker:**
+- 
+```
+npm install --save lix @lunatechs/lunatea-napkin prettier
+```
+
+1. Create a local scope with lix (unless you want to continue installing libraries globally)
 
 ```
 lix scope create
@@ -35,12 +42,21 @@ lix scope create
 
 4. Install necessary Haxe libraries using lix
 
+
+- **For RPG Maker:**
 ```
 lix install gh:LunaTechsDev/LunaTea
 ```
 
-5. Create a `compile.hxml` arguments list file for the haxe compiler in root of directory
+- **For Paper Maker**
 
+```
+lix install gh:LunaTechsDev/PaperTea
+```
+
+1. Create a `compile.hxml` arguments list file for the haxe compiler in root of directory
+
+- **For RPG Maker:**
 ```
 # Include library
 -lib LunaTea
@@ -66,8 +82,39 @@ lix install gh:LunaTechsDev/LunaTea
 -js dist/plugin_name.js
 ```
 
-6. Open your `package.json` and add a build script, for example
+- **For Paper Maker:**
 
+```
+-lib PaperTea
+
+-cp src
+
+--macro core.Macros.setOutput()
+--macro core.Macros.copyDetails()
+
+--dce full
+
+-D js-es=6
+-D js-classic
+
+-main Main
+
+--each
+--next
+# Filled out via a macro
+--js game\
+
+--next
+-D dist
+# Filled out via a macro
+--js dist\
+
+--macro core.Macros.runNapkin()
+```
+
+1. Open your `package.json` and add a build script, for example
+
+- **For RPG Maker:**
 ```json
 {
   "name": "haxe-lunatea-example",
@@ -85,7 +132,22 @@ lix install gh:LunaTechsDev/LunaTea
 ```
 Where `napkin ./dist/` is pointing to the directory your plugin is compiled to
 
-7. Create your `src` directory and add your `Main.hx` file and start developing
+- **For Paper Maker:**
+  
+```json
+{
+  "devDependencies": {
+    "@lunatechs/lunatea-napkin": "2.0.1",
+    "lix": "^15.10.1",
+    "prettier": "^2.3.2"
+  },
+  "scripts": {
+    "build": "lix compile.hxml",
+  }
+}
+```
+
+1. Create your `src` directory and add your `Main.hx` file and start developing
 
 # Extras
 
