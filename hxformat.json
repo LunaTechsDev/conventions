@@ -4,6 +4,7 @@
     "colonPolicy": "after",
     "caseColonPolicy": "after",
     "objectFieldColonPolicy": "after",
+    "semicolonPolicy": "none",
     "bracesConfig": {
       "objectLiteralBraces": {
         "openingPolicy": "after",
@@ -17,8 +18,7 @@
     }
   },
   "indentation": {
-    "character": " ",
-    "tabWidth": 2
+    "character": "  "
   },
   "wrapping": {
     "maxLineLength": 120,
